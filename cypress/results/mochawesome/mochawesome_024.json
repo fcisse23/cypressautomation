@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-01T16:28:04.558Z",
+    "end": "2023-08-01T16:28:07.133Z",
+    "duration": 2575,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a53bb723-e3de-4bae-8220-b5aabde3d52c",
+      "title": "",
+      "fullFile": "cypress/e2e/radioCheckBox.cy.js",
+      "file": "cypress/e2e/radioCheckBox.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "953c50f2-8960-4cfe-b0d1-9b0bae84bba1",
+          "title": "Bouton radio et checkbox",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test radio et checkbox",
+              "fullTitle": "Bouton radio et checkbox Test radio et checkbox",
+              "timedOut": null,
+              "duration": 1114,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[type=\"radio\"]').first().then(radio1 => {\n  cy.wrap(radio1).click();\n  cy.wrap(radio1).should(\"be.checked\");\n});\ncy.get('[type=\"radio\"]').eq(1).then(radio2 => {\n  cy.wrap(radio2).click();\n  cy.wrap(radio2).should(\"be.checked\");\n});\n/**\n * méthode d'indexation\n *\n * 1 [0], 2[1], 3[2]\n * eq(0), eq(1), eq(2)\n * */\ncy.get('[type=\"radio\"]').eq(2).then(radio3 => {\n  cy.wrap(radio3).click();\n  cy.wrap(radio3).should(\"be.checked\");\n});\ncy.get('[type=\"checkbox\"]').then(checkbox => {\n  cy.wrap(checkbox).check(\"Bike\");\n  cy.wrap(checkbox).should(\"be.checked\");\n  cy.wrap(checkbox).uncheck(\"Bike\");\n  cy.wrap(checkbox).should(\"not.be.checked\");\n  cy.get(\"select\").contains(\"Saab\");\n});",
+              "err": {},
+              "uuid": "9dcad8f3-4fa5-46d9-a83f-682aecc80f9b",
+              "parentUUID": "953c50f2-8960-4cfe-b0d1-9b0bae84bba1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9dcad8f3-4fa5-46d9-a83f-682aecc80f9b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1114,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

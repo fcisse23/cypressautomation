@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-03T17:24:57.640Z",
+    "end": "2023-05-03T17:25:04.788Z",
+    "duration": 7148,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "01c49b70-172a-47ae-8614-1f6cf1e8c141",
+      "title": "",
+      "fullFile": "cypress/e2e/champDate.cy.js",
+      "file": "cypress/e2e/champDate.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0f0aab40-6b05-402b-80c3-9d540be4afbe",
+          "title": "Sélecteur Css",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test date picker",
+              "fullTitle": "Sélecteur Css Test date picker",
+              "timedOut": null,
+              "duration": 5716,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const maDateDuJour = dateDuJour();\nconst maDateDuJourPlusDeux = dateDuJourPlusDeux();\ncy.log(\"La date du jour\", maDateDuJour);\ncy.log(\"La date du jour plus deux\", maDateDuJourPlusDeux);\ncy.get(\".oxd-sidepanel-body\").contains(\"My Info\").click();\ncy.get(\":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-date-wrapper > .oxd-date-input > .oxd-input\").then(datePicker => {\n  cy.wrap(datePicker).clear().type(maDateDuJourPlusDeux);\n  cy.wrap(datePicker).should(\"have.value\", maDateDuJourPlusDeux);\n});",
+              "err": {},
+              "uuid": "d31d6f4b-3c6b-40dc-b599-b10058ac49bd",
+              "parentUUID": "0f0aab40-6b05-402b-80c3-9d540be4afbe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d31d6f4b-3c6b-40dc-b599-b10058ac49bd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-01T16:44:39.723Z",
+    "end": "2023-08-01T16:44:46.112Z",
+    "duration": 6389,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3e86ed2d-008b-41d3-b045-90f04be7ff04",
+      "title": "",
+      "fullFile": "cypress/e2e/tableau.cy.js",
+      "file": "cypress/e2e/tableau.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "803ba70e-410d-4bfb-a481-d535986b54b5",
+          "title": "Test tableau",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Suppression 1ère ligne",
+              "fullTitle": "Test tableau Suppression 1ère ligne",
+              "timedOut": null,
+              "duration": 5371,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "pimmPo.accesPim();\npimmPo.selectionPremiereLigneTableau();\npimmPo.clickCaseACocher();\npimmPo.assertboutonDeleteVisible();\npimmPo.clickboutonDeletteTableau();\npimmPo.clickBoutonDelete();",
+              "err": {},
+              "uuid": "e62a3783-63c6-4080-9679-f1fa7da59a05",
+              "parentUUID": "803ba70e-410d-4bfb-a481-d535986b54b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e62a3783-63c6-4080-9679-f1fa7da59a05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5371,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

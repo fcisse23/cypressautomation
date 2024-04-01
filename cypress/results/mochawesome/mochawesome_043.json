@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-01T17:16:28.050Z",
+    "end": "2023-08-01T17:16:36.999Z",
+    "duration": 8949,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2b395d0-4e58-478b-a0cc-1e5af864c0fe",
+      "title": "",
+      "fullFile": "cypress/e2e/listDropdowns.cy.js",
+      "file": "cypress/e2e/listDropdowns.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "89f1beca-4626-474c-83dd-e9e3f8dc6615",
+          "title": "Sélecteur Css",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ma liste de configuration",
+              "fullTitle": "Sélecteur Css Ma liste de configuration",
+              "timedOut": null,
+              "duration": 7789,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".oxd-sidepanel-body\").contains(\"PIM\").click();\n// 1\n// cy.get(\".--parent\").click();\n// // cy.get(\".oxd-dropdown-menu > :nth-child(1)\").click();\n// cy.get(\".oxd-dropdown-menu\").contains(\"Optional Fields\").click();\n// cy.get(\".orangehrm-main-title\").should(\"contain\", \"Optional Fields\");\n// 2\nfor (let index = 0; index <= 4; index++) {\n  cy.get(\".--parent\").click();\n  cy.get(\".oxd-topbar-body-nav-tab-link\").eq(index).then(textElement => {\n    cy.wrap(textElement).click();\n    const element = textElement.text();\n    cy.get(\".orangehrm-main-title\").should(\"contain\", element);\n  });\n}",
+              "err": {},
+              "uuid": "d0ed43ab-2eeb-4c1b-93ab-1f0b02db115d",
+              "parentUUID": "89f1beca-4626-474c-83dd-e9e3f8dc6615",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d0ed43ab-2eeb-4c1b-93ab-1f0b02db115d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7789,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

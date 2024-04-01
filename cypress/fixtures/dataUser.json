@@ -1,0 +1,7 @@
+{
+    "Admnin": {
+        "identifiant": "Admin",
+        "password":"admin123"
+    },
+    "stephane":["steph", "password"]
+}

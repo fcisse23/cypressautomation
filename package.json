@@ -15,7 +15,8 @@
     "cypress:dashboard": "npx cypress run --record --key 029a5586-d226-4544-8dd1-ec272ccdaaad",
     "start-json-server": "json-server --watch db.json",
     "cypress:spec-connexion": "cypress run --spec cypress/e2e/features/connexion.feature",
-    "cypress:spec-systemUser": "cypress run --spec cypress/e2e/features/systemUsers.feature"
+    "cypress:spec-systemUser": "cypress run --spec cypress/e2e/features/systemUsers.feature",
+    "cypress:spec-systemUser222": "cypress run --spec cypress/e2e/features/systemUsers.feature"
   },
   "keywords": [],
   "author": "",
